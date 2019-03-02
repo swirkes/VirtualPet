@@ -1,7 +1,7 @@
 # VirtualPet
 A serializable virtual pet program based on Tamagotchi toys.
 
-To execute program, double click VirtualPetApplication in TamagotchiUserInterface Folder.
+To execute program, double click Virtual Pet Application in VirtualPetGit Folder.
 
 This project initializes with three different virtual pets which the player must keep alive by feeding, playing and 
 putting to sleep. 
