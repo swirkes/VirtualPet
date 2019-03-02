@@ -1,0 +1,45 @@
+﻿<Window x:Class="TamagotchiUserInterface.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Closing="Window_Closing"
+        xmlns:local="clr-namespace:TamagotchiUserInterface"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <Image x:Key="T1Hungry" Source="C:\Users\swirk\source\repos\TamagotchiUserInterface\Tamagotchi1Hungry.png" Height="125" Width="108" />
+        <Image x:Key="T2Hungry" Source="C:\Users\swirk\source\repos\TamagotchiUserInterface\Tamagotchi2Hungry.png" Height="125" Width="108" />
+        <Image x:Key="T3Hungry" Source="C:\Users\swirk\source\repos\TamagotchiUserInterface\Tamagotchi3Hungry.png" Height="125" Width="108" />
+        <Image x:Key="T1Sleep" Source="C:\Users\swirk\source\repos\TamagotchiUserInterface\Tamagotchi1Sleep.png" Height="125" Width="108" />
+        <Image x:Key="T2Sleep" Source="C:\Users\swirk\source\repos\TamagotchiUserInterface\Tamagotchi2Sleep.png" Height="125" Width="108" />
+        <Image x:Key="T3Sleep" Source="C:\Users\swirk\source\repos\TamagotchiUserInterface\Tamagotchi3Sleep.png" Height="125" Width="108" />
+        <Image x:Key="T1Dead" Source="C:\Users\swirk\source\repos\TamagotchiUserInterface\Tamagotchi1Dead.png" Height="125" Width="108" />
+        <Image x:Key="T2Dead" Source="C:\Users\swirk\source\repos\TamagotchiUserInterface\Tamagotchi2Dead.png" Height="125" Width="108" />
+        <Image x:Key="T3Dead" Source="C:\Users\swirk\source\repos\TamagotchiUserInterface\Tamagotchi3Dead.png" Height="125" Width="108" />
+        <Image x:Key="T1Normal" Source="C:\Users\swirk\source\repos\TamagotchiUserInterface\Tamagotchi1.png" Height="125" Width="108"/>
+        <Image x:Key="T2Normal" Source="C:\Users\swirk\source\repos\TamagotchiUserInterface\Tamagotchi2.png" Height="125" Width="108"/>
+        <Image x:Key="T3Normal" Source="C:\Users\swirk\source\repos\TamagotchiUserInterface\Tamagotchi3.png" Height="125" Width="108"/>
+    </Window.Resources>
+    <Grid RenderTransformOrigin="0.494,0.509">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="158*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="587*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock HorizontalAlignment="Left" Margin="63,10,0,0" TextWrapping="Wrap" Text="Choose a Tamagotchi to play dodgeball with:" VerticalAlignment="Top" RenderTransformOrigin="-0.442,-0.289" Height="41" Width="241" Grid.Column="2"/>
+        <Button x:Name="Tamagotchi1btn" Content="Button" Margin="156,172,0,0" Width="108" Height="125" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.ColumnSpan="3" Click="Tamagotchi1_Click"/>
+        <Button x:Name="Tamagotchi2btn" Content="Button" Margin="135,172,0,0" Width="108" Height="125" VerticalAlignment="Top" HorizontalAlignment="Left" RenderTransformOrigin="0.201,0.539" Grid.Column="2" Click="Tamagotchi2_Click"/>
+        <Button x:Name="Tamagotchi3btn" Content="Button" Margin="334,172,0,0" Width="108" Height="125" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="2" Click="Tamagotchi3_Click"/>
+        <Label x:Name="lblHappiness1" Content="" HorizontalAlignment="Left" Margin="156,326,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.408,0.115" Grid.ColumnSpan="3" Width="168"/>
+        <Label x:Name="lblHappiness2" Content="" Grid.Column="2" HorizontalAlignment="Left" Margin="135,326,0,0" VerticalAlignment="Top" Width="169"/>
+        <Label x:Name="lblHappiness3" Content="" Grid.Column="2" HorizontalAlignment="Left" Margin="334,326,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.461,-0.481" Width="177"/>
+        <Button x:Name="Feed1" Grid.ColumnSpan="2" Content="Feed" Grid.Column="1" HorizontalAlignment="Left" Margin="0,102,0,0" VerticalAlignment="Top" Width="75" Click="Feed1_Click"/>
+        <Button x:Name="Feed2" Content="Feed" Grid.Column="2" HorizontalAlignment="Left" Margin="135,102,0,0" VerticalAlignment="Top" Width="75" Click="Feed2_Click"/>
+        <Button x:Name="Feed3" Content="Feed" Grid.Column="2" HorizontalAlignment="Left" Margin="334,102,0,0" VerticalAlignment="Top" Width="76" Click="Feed3_Click"/>
+        <Button x:Name="Sleep1" Grid.ColumnSpan="2" Content="Give Pillow" Grid.Column="1" HorizontalAlignment="Left" Margin="0,127,0,0" VerticalAlignment="Top" Width="75" Click="Sleep1_Click"/>
+        <Button x:Name="Sleep2" Content="Give Pillow" Grid.Column="2" HorizontalAlignment="Left" Margin="135,127,0,0" VerticalAlignment="Top" Width="75" Click="Sleep2_Click"/>
+        <Button x:Name="Sleep3" Content="Give Pillow" Grid.Column="2" HorizontalAlignment="Left" Margin="334,127,0,0" VerticalAlignment="Top" Width="75" Click="Sleep3_Click"/>
+
+    </Grid>
+</Window>
